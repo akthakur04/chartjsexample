@@ -107,8 +107,7 @@
 
     function downloadPDF(){
     const canvas = document.getElementById('myChart');
-    const canvasImage = canvas.toDataURL('
-    image/svg',1.0);
+    const canvasImage = canvas.toDataURL('image/svg',1.0);
 
     let pdf= new jsPDF();
     pdf.addImage(canvasImage, 'SVG', 15,15,150,100);
